@@ -1,0 +1,60 @@
+= Host information =============================================================
+$> hostname; uname -msr
+e3r6p9.42.fr
+Darwin 14.4.0 x86_64
+
+$> date
+Fri Aug 14 17:36:23 CEST 2015
+
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 6.1.0 (clang-602.0.49) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.4.0
+Thread model: posix
+
+$> clang --version
+Apple LLVM version 6.1.0 (clang-602.0.49) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.4.0
+Thread model: posix
+
+= repeat_alpha =================================================================
+$> clang -Wextra -Wall -Werror repeat_alpha.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./ikw4tin5nlcgnmfdx7fdsycl 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./d9bw0dq3knj8cb73flwne96x lol mdr
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./u9b4qpyce2fq0hvtsnx6z25u zaz
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./ou72wubjy1vayp1xzobv9ju2 "Alex."
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./uilk03lglmdwhbnyw7h6jqih "abacadaba42"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./dfbnelrbinamo1qfzhmb7t2v "qperez il est pas chaud!tr0l0l0l"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./mz7vfbcppm0rasicv7ldwtcv "j'aime bien les poney"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

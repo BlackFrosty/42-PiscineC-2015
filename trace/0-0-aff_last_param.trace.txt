@@ -1,0 +1,45 @@
+= Host information =============================================================
+$> hostname; uname -msr
+e2r5p17.42.fr
+Darwin 14.4.0 x86_64
+
+$> date
+Fri Aug 14 17:16:53 CEST 2015
+
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 6.1.0 (clang-602.0.49) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.4.0
+Thread model: posix
+
+$> clang --version
+Apple LLVM version 6.1.0 (clang-602.0.49) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.4.0
+Thread model: posix
+
+= aff_last_param ===============================================================
+$> clang -Wextra -Wall -Werror aff_last_param.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./q9wt814g29ps6wqb6wylx7jr riri fifi et loulou sont les castor junior
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./q796ig1f406as8pkwtz7psea "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor sed odio ac dapibus. Pellentesque congue bibendum mollis. Vivamus accumsan massa diam, id aliquet arcu porta et. Vivamus nec tortor eu leo suscipit dapibus. Pellentesque auctor tortor nunc, in lobortis erat gravida nec. Curabitur hendrerit, tortor et cursus sagittis, enim turpis accumsan odio, blandit pretium lacus eros eget mi. Maecenas et lacus ac arcu tempor lacinia nec et massa. Quisque congue odio nec egestas accumsan. Nullam fermentum id enim id accumsan."
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./rhq6d2xzv4cxl9dh6l1rfcid ""
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./uzo4xu5kcqz2reu4uky2k1my 
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
